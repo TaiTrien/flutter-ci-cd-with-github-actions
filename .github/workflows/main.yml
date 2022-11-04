@@ -1,7 +1,7 @@
 on: 
   push:
-    tags:
-    - '*'
+   tags:
+   - '*'
    branches:
    - main
 name: Test, Build and Release apk on Github releases
