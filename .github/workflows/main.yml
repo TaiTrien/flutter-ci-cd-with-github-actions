@@ -24,5 +24,6 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
+        bodyFile: "changelog.md"
         token: ${{ secrets.TOKEN }}
 
