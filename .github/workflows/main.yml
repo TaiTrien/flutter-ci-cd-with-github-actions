@@ -1,9 +1,9 @@
 on: 
   push:
+    tags:
+    - '*'
    branches:
    - main
-     tags:
-     - '*'
 name: Test, Build and Release apk on Github releases
 jobs:
   build:
