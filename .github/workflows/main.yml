@@ -2,6 +2,8 @@ on:
   push:
    branches:
    - main
+     tags:
+     - '*'
 name: Test, Build and Release apk on Github releases
 jobs:
   build:
@@ -23,4 +25,4 @@ jobs:
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
         token: ${{ secrets.TOKEN }}
-        
+
